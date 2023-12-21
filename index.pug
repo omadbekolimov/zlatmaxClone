@@ -1,0 +1,1494 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./css/main.css")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous")
+        script(src="./index.js")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous")
+
+        title Document
+    body 
+        div.main
+            nav.navbar.navbar-expand-lg.bg-body-tertiary.md-navbar(data-bs-theme="dark")
+                .container-fluid
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="./assets/page1/phone.png" alt=".")/
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="./assets/page1/avatar.png" alt=".")/
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="./assets/page1/like2.png" alt=".")/
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="./assets/page1/korzinka2.png" alt=".")/
+                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbarNavDropdown.collapse.navbar-collapse
+                        ul.navbar-nav
+                            li.nav-item
+                                a.nav-link(href='#') О нас
+                            li.nav-item
+                                a.nav-link(href='#') Оплата и доставка
+                            li.nav-item
+                                a.nav-link(href='#') Новости
+                            li.nav-item
+                                a.nav-link(href='#') Контакты
+                            li.nav-item
+                                a.nav-link(href='#')  Личный кабинет
+                            li.nav-item.dropdown
+                                a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown link
+                                ul.dropdown-menu
+                                    li
+                                        a.dropdown-item(href='#') Каталог ножей
+                                    li
+                                        a.dropdown-item(href='#') Клинковое оружие
+                                    li
+                                        a.dropdown-item(href='#') Сувенирные изделия
+                                    li
+                                        a.dropdown-item(href='#') Фонари ARMYTEK
+                                    li
+                                        a.dropdown-item(href='#') Сопуствующие товары
+            nav.navbar.bg-body-tertiary.md-navbar
+                .container
+                    a.navbar-brand(href="#")
+                        img(src="./assets/page1/logo.png" alt="logo").ms-3
+
+            nav.topNav.navbar.navbar-expand-lg.bg-dark.border-bottom.border-body(data-bs-theme="dark")
+                Container.container
+                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                        li.nav-item 
+                            a.nav-link(href="#") О нас
+                        li.nav-item 
+                            a.nav-link(href="#") Оплата и доставка
+                        li.nav-item 
+                            a.nav-link(href="#") Новости
+                        li.nav-item 
+                            a.nav-link(href="#") Контакты
+                    a.nav-link.float-end.navbar-text.topNavText(href="#") 
+                        img.me-3(src="./assets/page1/avatar.png" alt=".")/ Личный кабинет
+
+            nav.topNav.navbar.navbar-expand-lg
+                Container.container
+                    div.parent
+                        div.navCenDiv 
+                            img.w-50(src="./assets/page1/logo.png" alt=".")/
+                        div.navCenDiv.me-4 
+                            form.d-flex(role="search")
+                                input(type="search" placeholder="Search" aria-label="Search").form-control.me-2
+                                button.btn.btn-outline-success Search
+                        div.navCenDiv 
+                            p
+                        div.navCenDiv 
+                            img(src="./assets/page1/location.png" alt=".").location
+                        div.navCenDiv.d-flex.justify-content-end 
+                            img(src="./assets/page1/like.svg" alt=".").like
+                        div.navCenDiv.d-flex
+                            img(src="./assets/page1/korzinka.png" alt=".").like.mb-3.ms-4
+                            div.ms-3.mb-3.korText
+                                span.d-block 0 р.
+                                span Оформить заказ
+
+            nav.topNav.navbar.navbar-expand-md.bg-dark.border-bottom.border-body(data-bs-theme="dark")
+                Container.container
+                    ul.nav.mb-2.mb-lg-0.parent2.nav-underline.text-center
+                        li.nav-item.mx-5
+                            a.nav-link(href="#") Каталог ножей
+                        li.nav-item.mx-5
+                            a.nav-link(href="#") Клинковое оружие
+                        li.nav-item.mx-5
+                            a.nav-link(href="#") Сувенирные изделия
+                        li.nav-item.mx-5
+                            a.nav-link(href="#") Фонари ARMYTEK
+                        li.nav-item.mx-5
+                            a.nav-link(href="#") Сопуствующие товары
+            div.page-1
+                .dark 
+                    div.page-1Main
+                        Container.container
+                            div.text-light.container
+                                div.page1-left
+                                    h2.mainTitle Интернет магазин сертифицированных  
+                                    h2.mainTitle2 златоустовских ножей 
+                                    p.mainTitle3.mt-4 
+                                        b Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине 
+                                        span представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками. 
+                                    button.page-1Button.mt-5 
+                                        b Подробнее
+                                div.parent3
+                                    .page-1Child
+                                        img(src="./assets/page1/page-1Box1.png" alt="").w-25
+                                        p.text-center Гарантия 100% возврата
+                                            br 
+                                            span денежных средств
+                                    .page-1Child 
+                                        img(src="./assets/page1/page-1Box2.png" alt="").w-25
+                                        p.text-center Доставка по России, 
+                                            br 
+                                            span Казахстану и Белоруссии
+                                    .page-1Child 
+                                        img(src="./assets/page1/page-1Box3.png" alt="").w-25
+                                        p.text-center Возможность оформление 
+                                            br 
+                                            span заказа без регистрации.
+                                    .page-1Child 
+                                        img(src="./assets/page1/page-1Box4.png" alt="").w-25
+                                        p.text-center Скидки постоянным 
+                                            br 
+                                            span покупателям. 
+            .page-2.container 
+                Container.container
+                    .parent4 
+                        .page-2Child
+                            div
+                                p 
+                                    b Среднеклинковое оружие
+                                div.page-2Border.mb-3  
+                                ul 
+                                    li Разделочные 
+                                    li Туристические
+                                    li Охотничьи
+                            div 
+                                img(src="./assets/page2/pichoq1.png" alt=".").page-2Img
+
+
+                        //- each item in page2Card
+                        //-     .page-2Child
+                        //-         div 
+                        //-             p 
+                        //-                 b= item.title
+                        //-             div.page-2Border.mb-3
+                        //-             ul
+                        //-                 li= item.li1 
+                        //-                 li= item.li2
+                        //-                 li= item.li3 
+                        //-         div 
+                        //-             img(src=item.src, alt="..")
+                        .page-2Child
+                            div
+                                p 
+                                    b Среднеклинковое оружие
+                                div.page-2Border.mb-3  
+                                ul 
+                                    li Разделочные 
+                                    li Туристические
+                                    li Охотничьи
+                            div 
+                                img(src="./assets/page2/pichoq2.png" alt=".").page-2Img
+                        .page-2Child
+                            div
+                                p 
+                                    b Среднеклинковое оружие
+                                div.page-2Border.mb-3  
+                                ul 
+                                    li Разделочные 
+                                    li Туристические
+                                    li Охотничьи
+                            div 
+                                img(src="./assets/page2/pichoq3.png" alt=".").page-2Img
+                        .page-2Child
+                            div
+                                p 
+                                    b Среднеклинковое оружие
+                                div.page-2Border.mb-3  
+                                ul 
+                                    li Разделочные 
+                                    li Туристические
+                                    li Охотничьи
+                            div 
+                                img(src="./assets/page2/pichoq4.png" alt=".").page-2Img
+                        .page-2Child
+                            div
+                                p 
+                                    b Среднеклинковое оружие
+                                div.page-2Border.mb-3  
+                                ul 
+                                    li Разделочные 
+                                    li Туристические
+                                    li Охотничьи
+                            div 
+                                img(src="./assets/page2/pichoq5.png" alt=".").page-2Img
+                        .page-2Child
+                            div
+                                p 
+                                    b Среднеклинковое оружие
+                                div.page-2Border.mb-3 
+                                ul 
+                                    li Разделочные 
+                                    li Туристические
+                                    li Охотничьи
+                            div 
+                                img(src="./assets/page2/pichoq6.png" alt=".").page-2Img
+            .page-3.container
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Хиты продаж 
+                        p 
+                            a(href="#") Перейти в каталог
+                                img(src="./assets/page3/Vector.svg" alt="").ms-2
+                    .page-3Body 
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+            .page-4 
+                .dark.py-5
+                    .container
+                        .row.container.w-100
+                            .col-12.col-md-4 
+                                h4.text-light 
+                                    b Новинки
+                                p.page4-text.mb-5 Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+                                a(href="#").page4-link Больше новинок
+                                    img(src="./assets/page4/right.svg" alt=".").ms-2 
+                            .col-12.col-md-8
+                                .page-4-cards 
+                                    .page-4Child 
+                                        img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                                        .rl4
+                                            .page4R 
+                                                h6 
+                                                    b Нож Лиса
+                                                p.price.page4Sty 95х18
+                                                .rating
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                            .page4L.pt-4 
+                                                p.price.page4Sty.text-end Орех, Алюминий
+                                                p.otziv.page4Sty.pt-2.text-end 12 отзывов
+                                        hr
+                                        .row
+                                            .col-6
+                                                h6 
+                                                    b 2 719 р.
+                                            .col-6.d-flex.justify-content-end
+                                                span  
+                                                    img(src="./assets/page3/tarozi.svg" alt=".")
+                                                span.ms-2  
+                                                    img(src="./assets/page3/Vector.svg" alt="..")
+                                        .d-flex.justify-content-center
+                                            button.card-btn.mt-3 В корзину 
+                                                img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                                    .page-4Child 
+                                        img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                                        .rl4
+                                            .page4R 
+                                                h6 
+                                                    b Нож Лиса
+                                                p.price.page4Sty 95х18
+                                                .rating
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                            .page4L.pt-4 
+                                                p.price.page4Sty.text-end Орех, Алюминий
+                                                p.otziv.page4Sty.pt-2.text-end 12 отзывов
+                                        hr
+                                        .row
+                                            .col-6
+                                                h6 
+                                                    b 2 719 р.
+                                            .col-6.d-flex.justify-content-end
+                                                span  
+                                                    img(src="./assets/page3/tarozi.svg" alt=".")
+                                                span.ms-2  
+                                                    img(src="./assets/page3/Vector.svg" alt="..")
+                                        .d-flex.justify-content-center
+                                            button.card-btn.mt-3 В корзину 
+                                                img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                                    .page-4Child 
+                                        img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                                        .rl4
+                                            .page4R 
+                                                h6 
+                                                    b Нож Лиса
+                                                p.price.page4Sty 95х18
+                                                .rating
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                            .page4L.pt-4 
+                                                p.price.page4Sty.text-end Орех, Алюминий
+                                                p.otziv.page4Sty.pt-2.text-end 12 отзывов
+                                        hr
+                                        .row
+                                            .col-6
+                                                h6 
+                                                    b 2 719 р.
+                                            .col-6.d-flex.justify-content-end
+                                                span  
+                                                    img(src="./assets/page3/tarozi.svg" alt=".")
+                                                span.ms-2  
+                                                    img(src="./assets/page3/Vector.svg" alt="..")
+                                        .d-flex.justify-content-center
+                                            button.card-btn.mt-3 В корзину 
+                                                img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+
+            .page-3.container
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Акции 
+                        p 
+                            a(href="#") Все акции
+                                img(src="./assets/page4/right.svg" alt="").ms-2
+                    .page-3Body 
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+            .page-3.container
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Акции 
+                        p 
+                            a(href="#") Все акции
+                                img(src="./assets/page4/right.svg" alt="").ms-2
+                    .page-3Body 
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+
+            .page-4 
+                .dark.py-5
+                    .container
+                        .row.container.w-100
+                            .col-12.col-lg-4 
+                                h4.text-light 
+                                    b Новинки
+                                p.page4-text.mb-5 Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+                                a(href="#").page4-link Больше новинок
+                                    img(src="./assets/page4/right.svg" alt=".").ms-2 
+                            .col-12.col-lg-8
+                                .page-4-cards 
+                                    .page-4Child 
+                                        img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                                        .rl4
+                                            .page4R 
+                                                h6 
+                                                    b Нож Лиса
+                                                p.price.page4Sty 95х18
+                                                .rating
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                            .page4L.pt-4 
+                                                p.price.page4Sty.text-end Орех, Алюминий
+                                                p.otziv.page4Sty.pt-2.text-end 12 отзывов
+                                        hr
+                                        .row
+                                            .col-6
+                                                h6 
+                                                    b 2 719 р.
+                                            .col-6.d-flex.justify-content-end
+                                                span  
+                                                    img(src="./assets/page3/tarozi.svg" alt=".")
+                                                span.ms-2  
+                                                    img(src="./assets/page3/Vector.svg" alt="..")
+                                        .d-flex.justify-content-center
+                                            button.card-btn.mt-3 В корзину 
+                                                img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                                    .page-4Child 
+                                        img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                                        .rl4
+                                            .page4R 
+                                                h6 
+                                                    b Нож Лиса
+                                                p.price.page4Sty 95х18
+                                                .rating
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                            .page4L.pt-4 
+                                                p.price.page4Sty.text-end Орех, Алюминий
+                                                p.otziv.page4Sty.pt-2.text-end 12 отзывов
+                                        hr
+                                        .row
+                                            .col-6
+                                                h6 
+                                                    b 2 719 р.
+                                            .col-6.d-flex.justify-content-end
+                                                span  
+                                                    img(src="./assets/page3/tarozi.svg" alt=".")
+                                                span.ms-2  
+                                                    img(src="./assets/page3/Vector.svg" alt="..")
+                                        .d-flex.justify-content-center
+                                            button.card-btn.mt-3 В корзину 
+                                                img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                                    .page-4Child 
+                                        img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                                        .rl4
+                                            .page4R 
+                                                h6 
+                                                    b Нож Лиса
+                                                p.price.page4Sty 95х18
+                                                .rating
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                                    span.star 
+                                                        img(src="./assets/page3/Star.svg" alt="")
+                                            .page4L.pt-4 
+                                                p.price.page4Sty.text-end Орех, Алюминий
+                                                p.otziv.page4Sty.pt-2.text-end 12 отзывов
+                                        hr
+                                        .row
+                                            .col-6
+                                                h6 
+                                                    b 2 719 р.
+                                            .col-6.d-flex.justify-content-end
+                                                span  
+                                                    img(src="./assets/page3/tarozi.svg" alt=".")
+                                                span.ms-2  
+                                                    img(src="./assets/page3/Vector.svg" alt="..")
+                                        .d-flex.justify-content-center
+                                            button.card-btn.mt-3 В корзину 
+                                                img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+
+            .page-3.container
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Акции 
+                        p 
+                            a(href="#") Все акции
+                                img(src="./assets/page4/right.svg" alt="").ms-2
+                    .page-3Body 
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+            .page-3.container
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Акции 
+                        p 
+                            a(href="#") Все акции
+                                img(src="./assets/page4/right.svg" alt="").ms-2
+                    .page-3Body 
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page3/pichoq.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+            .page-5.container 
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Наши статьи
+
+                    .page-3Body.mt-5 
+                        .page-5Child 
+                            .top5
+                                img(src="./assets/page5/img1.png" alt=".") 
+                            .body5
+                                p.body5-title 
+                                    b Все о ножах: как правильно выбрать
+                                p.body5-p 24.07.2019
+                        .page-5Child 
+                            .top5
+                                img(src="./assets/page5/img2.png" alt=".") 
+                            .body5
+                                p.body5-title 
+                                    b Все Как правильно выбрать фонарь
+                                p.body5-p 24.07.2019
+                        .page-5Child 
+                            .top5
+                                img(src="./assets/page5/img3.png" alt=".") 
+                            .body5
+                                p.body5-title 
+                                    b Все о ножах: как правильно выбрать
+                                p.body5-p 24.07.2019
+                        .page-5Child 
+                            .top5
+                                img(src="./assets/page5/img4.png" alt=".") 
+                            .body5
+                                p.body5-title 
+                                    b Все о ножах: как правильно выбрать
+                                p.body5-p 24.07.2019
+
+            .page-6.container
+                Container.container
+                    .page-6-body
+                        .page-6-child.row
+                            .col-12.col-md-6 
+                                h5.mb-3 Палобные мультифонари
+                                .page-2Border.mb-3  
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                button.card-btn.mt-3 Подробнее
+                            .col-12.col-md-6 
+                                img(src="./assets/page6/fonarcha.png" alt="")
+                        .page-6-child.row
+                            .col-12.col-md-6 
+                                h5.mb-3 Палобные мультифонари
+                                .page-2Border.mb-3  
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                button.card-btn.mt-3 Подробнее
+                            .col-12.col-md-6 
+                                img(src="./assets/page6/boshF.png" alt="")
+            .page-3.container
+                Container.container
+                    .page-3Top 
+                        h4 
+                            b Фонари 
+                        p 
+                            a(href="#") Перейти в каталог
+                                img(src="./assets/page4/right.svg" alt="").ms-2
+                    .page-3Body 
+                        .page-3Child 
+                            img(src="./assets/page7/fonar.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page7/fonar.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page7/fonar.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+
+                        .page-3Child 
+                            img(src="./assets/page7/fonar.png" alt="Mahsulotning Rasm").cardimg
+                            .rl3
+                                .page3R 
+                                    h6 
+                                        b Нож Лиса
+                                    p.price.page3Sty 95х18
+                                    .rating
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                        span.star 
+                                            img(src="./assets/page3/Star.svg" alt="")
+                                .page3L.pt-4 
+                                    p.price.page3Sty.text-end Орех, Алюминий
+                                    p.otziv.page3Sty.pt-2.text-end 12 отзывов
+                            hr
+                            .row
+                                .col-6
+                                    h6 
+                                        b 2 719 р.
+                                .col-6.d-flex.justify-content-end
+                                    span  
+                                        img(src="./assets/page3/tarozi.svg" alt=".")
+                                    span.ms-2  
+                                        img(src="./assets/page3/Vector.svg" alt="..")
+                            .d-flex.justify-content-center
+                                button.card-btn.mt-3 В корзину 
+                                    img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
+            .footer 
+                .footer-top
+                    .dark
+                        .footer-top-text.container
+                            h3  
+                                b Златоустовские ножи интернет-магазин "ЗЛАТМАКС"
+                            p Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого качества из города оружейников - Златоуста. Златоустовские ножи известны и популярны среди потребителей как на российским рынке, так и за рубежом: ножи охотничьи, хозяйственные, туристические, рыбацкие, складные и метательные. Нож Златоуста - это идеальный друг и товарищ в повседневной жизни и в экстремальных ситуациях. На многую продукцию распространяется гарантия до 10 лет - это один из главных показателей качества. Для Вас на нашем сайте "zlatmax" предложен огромный ассортимент Златоустовских ножей. Наши менеджеры помогут определиться и подобрать самый лучший Златоустовский нож, ориентируясь на Ваши пожелания.
+                .container-fluid.footer-container_dark
+                    .container
+                        .row.footer_information
+                            .col-12.col-md-6.col-lg-3
+                                h5 ИНФОРМАЦИЯ
+                                ul 
+                                    li Златоустовские ножи в Москве и Московской области
+                                    li Ножевые стали
+                                    li О нас
+                                    li Условия оплаты и доставки
+                                    li Политика конфиденциальности
+                            .col-12.col-md-6.col-lg-3.mt-4.mt-md-0
+                                h5 СЛУЖБА ПОДДЕРЖКИ
+                                ul 
+                                    li Контактная информация
+                                    li Возврат товара
+                                    li Карта сайта
+                            .col-12.col-md-6.col-lg-3.mt-4.mt-lg-0
+                                h5 ДОПОЛНИТЕЛЬНО
+                                ul 
+                                    li Подарочные сертификаты
+                                    li Партнеры
+                                    li Товары со скидкой
+                            .col-12.col-md-6.col-lg-3.mt-4.mt-lg-0
+                                h5 ЛИЧНЫЙ КАБИНЕТ
+                                ul 
+                                    li Личный кабинет
+                                    li История заказов
+                                    li Мои закладки
+                                    li Рассылка новостей
+                        hr
+                        .row.footer_location
+                            .col-12.col-md-6.col-lg-3
+                                h5  КОНТАКТЫ
+                                ul 
+                                    li
+                                        img(src="./assets/footer/footerPhone.png" alt="img")
+                                        span 8 (800) 777-49-67
+                                    li 
+                                        img(src="./assets/footer/footerWatch.png" alt="img")
+                                        span Пн-Пт 7:00 - 16:00 (МСК)
+                                    li 
+                                        img(src="./assets/footer/footerLocation.png" alt="img")
+                                        span Златоуст, ул. Шоссейная, д. 1, офис «6Б»
+                                    li 
+                                        img(src="./assets/footer/footerEmail.png" alt="img")
+                                        span info@zlatmax.ru
+                            .col-12.col-md-6.col-lg-3.mt-4.mt-md-0
+                                h5 ПОЛЕЗНЫЕ ССЫЛКИ
+                                ul 
+                                    li Способы оплаты и доставки
+                            .col-12.col-md-6.col-lg-3.mt-4.mt-lg-0
+                                h5 НАША ГАРАНТИЯ
+                                ul 
+                                    li Недовольны своей покупкой? Вы можете вернуть ее в течении 30 дней с даты получения, согласно нашим правилам
+                            .col-12.col-md-6.col-lg-3.mt-4.mt-lg-0
+                                h5 НОВОСТНАЯ РАССЫЛКА
+                                ul 
+                                    li Подпишитесь прямо сейчас!
+                                    li
+                                        input(type="text" placeholder="example@gmail.com")
+                                    li Я прочитал Условия соглашения и согласен с условиями 
+                        div.footer-networks
+                            img(src="./assets/footer/footerFacebook.png" alt="img")
+                            img(src="./assets/footer/footerCall.png" alt="img")
+                            img(src="./assets/footer/footerTelegram.png" alt="img")
+                            img(src="./assets/footer/footerWatsap.png" alt="img")
+                        hr
+                        .row.footer-bottom-text
+                            .col-12.col-md-6
+                                p.
+                                    Все материалы, размещенные на сайте, носят справочный характер и не являются 
+                                    публичной офертой, определяемойположениями Статьи 437 Гражданского кодекса Российской Федерации. 
+                                    При копировании материалов гиперссылка на www.zlatmax.ru обязательна!
+                            .col-12.col-md-6
+                                p Златоустовские ножи www.zlatmax.ru ©
+
+
+
+
+       
+
+
+

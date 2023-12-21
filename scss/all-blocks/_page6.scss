@@ -1,0 +1,39 @@
+.page-6 {
+  margin-top: 5%;
+}
+.page-6-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  justify-items: center;
+  grid-row-gap: 20px;
+
+}
+
+.page-6-child img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-6-child {
+    width: 95%;
+    padding: 5% 0 0 5%;
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  -moz-box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  transition: 0.5s ease-out;
+}
+
+.page-6-child:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: "600px") {
+  .page-6 {
+    .page-6-body {
+      grid-template-columns: 1fr;
+    }
+  }
+}

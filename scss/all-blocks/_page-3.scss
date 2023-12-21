@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+.page-3Top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 5%;
+}
+.page-3Top a {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+  float: inline-end;
+}
+
+.page-3Top a:hover {
+  color: #e8aa31;
+}
+
+.page-3Body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+
+.rl3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0;
+  justify-items: center;
+  grid-row-gap: 0px;
+}
+
+.cardimg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-3Child {
+  width: 95%;
+  margin-top: 10%;
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  -moz-box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  padding: 7%;
+  transition: 0.5s;
+}
+
+.page-3Child:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.page3Sty {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(89, 87, 87);
+}
+
+.card-btn {
+  width: 90%;
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 12px;
+  color: #fff;
+  background-color: #e8aa31;
+  padding: 5% 10%;
+  border: solid #e8cd31 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 9px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #e8aa31;
+  border: solid 2px #e8aa31;
+}
+
+@media (max-width: "600px") {
+  .page-3Body {
+    grid-template-columns: 1fr;
+  }
+  .page-3Top {
+    grid-template-columns: 1fr;
+    justify-items: center !important;
+  }
+  .page-3Top a {
+    float: none;
+  }
+}

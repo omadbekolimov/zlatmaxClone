@@ -1,0 +1,12 @@
+.md-navbar {
+    display: none !important;
+}
+.md-dark {
+    background-color: black !important;
+}
+
+@media (max-width: "600px") {
+    .md-navbar {
+        display: block !important;
+    }
+}
